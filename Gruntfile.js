@@ -1,17 +1,16 @@
 module.exports = (grunt) => {
   grunt.initConfig({
-  less: {
-    compiled:{
-      files: {
-        'dist/compiled.css': 'css/layout.less'
-      }
-    }
+  htmlhint: {
+    options:{
+      htmlhintrc: './.htmlhintrc'
+    },
+    src:['*.html']
   }
   
 
   });
  
-  grunt.loadNpmTasks('grunt-contrib-less');
-  grunt.registerTask('default', ['less:compiled']);
+  grunt.loadNpmTasks('grunt-htmlhint');
+  grunt.registerTask('default', ['htmlhint']);
 };
 
