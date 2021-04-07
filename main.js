@@ -11,9 +11,10 @@ $(function(){
       $heightvalidate=$('#height-validate'),
       $area = $('#area');
 
-  /* calc button click */
+  /* calc button click hh */
   $btnCal.click(() => {
     let w = Number($width.val());
+
     let h = Number($height.val());
      
     var rect = rectangle();
