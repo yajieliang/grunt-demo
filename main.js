@@ -76,7 +76,7 @@ $(() => {
 
  $forkMeGH.show("https://baidu.com/");
  $bszPageFooter.show("body"),
-//字符级
+//字符级1
 $width.keypress((e)=>{
   let key = e.key,
       val = e.target.value,
